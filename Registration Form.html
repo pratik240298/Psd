@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Registration form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body style="background-color:red">
+<h1 style="text-align:center:">Student Registration Form</h1>
+<center>
+<form action="success.html"method="post">
+<table style="border-collapse:collapse;">
+<tr>
+<td><label for="fname">Enter Full Name<span style="color:red">*</span>
+:-</label></td>
+<td> <input type="text" id="fname" name="fname" required maxlength="10" minlength="2" placeholder="Enter only 10"><span>&ensp;&ensp;&ensp;(Enter only 10 character)</span>
+</td>
+</tr>
+<tr>
+<td><label for="email">Enter Email :-</label></td>
+<td><input type="email" id="email" id="email" name="email" required></td>
+</tr>
+<tr>
+<td><label for="password">Enter Password :-</label></td>
+<td><input type="password" id="password" name="password"></td>
+</tr>
+<tr>
+<td><label for="dob">Enter Date of birth :-</label></td>
+<td><input type="date" id="dob" name="dob" required ></td>
+<td><label for="contact">Enter contact No.:</label></td>
+<input type="text" value="91" size="1" readonly>
+<input type="tel" id="contact" name="contact" required pattern="[9789]{1}[0-9]{9}"></td>
+</tr>
+<tr>
+<td><label for="gender">Select Gender :-</label></td>
+<td>
+<input type ="radio" id="female" value="female" name="gender" required>
+<label for="female" >female</label>
+<br>
+<input type="radio" id="male" value="male" name="gender" required> 
+<labe for"male">male</label>
+</td>
+</tr>
+<tr>
+<td> <label for="courses">Select Courses:-</label></td>
+<td> <input type="checkbox" id="java" name="courses" value="java">
+<label for="java">Java</label>
+<input type="checkbox" id="python" name="courses" value="python">
+<label for="python">Python</label>
+<input type="checkbox" id="javascript name="courses" value="javascript">
+<label for="javascript">Javascript</label>
+</td>
+</tr>
+<tr>
+<td><label for="address"> Enter address:-</label></td>
+<td><textarea rows="5" cols="25" id="address" name="address" placeholder="Enter wing no and floor no."></textarea></td>
+</tr>
+<tr>
+<td><label for="file">Select File:-</label></td>
+<td><input type="file" id="file" name="file" accept=".pdf,.jpeg,.png" multiple></td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="Add data">
+<input type="reset" value="clear all field">
+</td>
+</tr>
+</tr>
+</table>
+</form>
+</center>
+
+</body>
+</html>
